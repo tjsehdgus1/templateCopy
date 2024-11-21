@@ -1,0 +1,49 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table {
+  width: 100%;
+}
+th {
+  background-color: #b8b8b8;
+  padding: 15px 20px 15px 20px;
+  width: 30%;
+}
+td {
+  width: 70%;
+}
+input,
+select {
+  padding: 10px;
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  items-align: center;
+}
+button {
+  color: white;
+  background-color: blue;
+  border-color: blue;
+  padding: 10px;
+}
+#buttonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+}
+#buttonDiv button {
+  width: 150px;
+  border: round;
+}
+
+#meetContent {
+  height: 150px;
+}

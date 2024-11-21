@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Copy</title>
+
+    <link rel="stylesheet" href="./layout.css" />
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <h2>회의실 예약</h2>
+    <div id="content">
+      <table>
+        <tr>
+          <th>회의일자</th>
+          <td>
+            <input type="Date" name="meetDate" id="meetDate" />
+          </td>
+        </tr>
+        <tr>
+          <th>회의시간</th>
+          <td>
+            <input id="meetTime" name="meetTime" readonly />
+          </td>
+        </tr>
+        <tr>
+          <th>회의 시작시간</th>
+          <td>
+            <input name="startH" id="startH" value="09" />시
+            <input name="startM" id="startM" value="00" />분
+          </td>
+        </tr>
+        <tr>
+          <th>회의시간</th>
+          <td>
+            <select name="timeH" id="timeH">
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+            </select>
+            시
+            <select name="timeM" id="timeM">
+              <option value="00">00</option>
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+            </select>
+            분
+            <button id="timeBtn" onclick="meetTime()">적용</button>
+          </td>
+        </tr>
+        <tr>
+          <th>장소</th>
+          <td>
+            <select name="place" id="place">
+              <option value="1">아이웍스 회의실</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>참석자</th>
+          <td>
+            <input value="" name="users" id="users" />
+            <button>참석자등록</button>
+          </td>
+        </tr>
+        <tr>
+          <th>회의내용</th>
+
+          <td>
+            <input name="title" id="title" />
+          </td>
+        </tr>
+      </table>
+      <button onclick="meetComplete()">작성완료</button>
+      <textarea name="meetContent" id="meetContent"> </textarea>
+      <div id="buttonDiv">
+        <button href="">뒤로가기</button>
+        <button onclick="textCopy()">복사하기</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
