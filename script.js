@@ -15,7 +15,7 @@ function meetTime() {
   if (meetM == 0) {
     meetM = "00";
   }
-  $("#meetTime").val(meetTime + "~" + meetH + ":" + meetM);
+  $("#meetTime").val(meetTime + " ~ " + meetH + ":" + meetM);
 }
 
 $("#meetContent").val(
