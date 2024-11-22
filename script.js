@@ -24,7 +24,7 @@ $("#meetContent").val(
 function meetComplete() {
   const content =
     " ■ 아래와 같이 회의실 사용할 예정입니다. 일정 참고 부탁드립니다.";
-  const date = " - 일시 : " + $("#meetDate").val() + ",";
+  const date = " - 일시 : " + $("#meetDate").val() + " ";
   const time = $("#meetTime").val();
   const place = " - 장소 : " + $("#place").val();
   const users = " - 참석자 : " + $("#users").val();
